@@ -1,0 +1,35 @@
+flutter_bloc
+equatable
+audioplayers
+vibration
+shared_preferences
+flame
+google_fonts
+  flame_svg
+  flutter_svg: ^1.0.3
+
+flutter_gen_runner
+build_runner
+very_good_analysis 
+
+flutter_gen:
+  integrations:
+    flutter_svg: true
+
+  colors:
+    inputs:
+      - assets/colors/colors.xml
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/audios/
+    - assets/images/
+    - assets/images/intro/
+    - assets/images/settings/
+    - assets/images/gameover/
+    - assets/images/game/
+
+
+flt pub run build_runner build --delete-conflicting-outputs
